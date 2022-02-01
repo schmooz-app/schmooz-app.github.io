@@ -3,6 +3,15 @@
   font-family: "Work Sans", sans-serif;
 }
 
+#headerImage {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  overflow: hidden;
+}
+
+
 body {
   background-color: #f2f2f7;
 }
@@ -22,7 +31,9 @@ input:focus {
 .mc-field-group {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3%;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 1%;
 }
 
 label {
@@ -139,11 +150,11 @@ img {
 }
 /* body content stylings */
 .bodyflex {
+  margin-top: 103px;
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  margin-left: 50px;
 }
 
 .sections {
@@ -152,6 +163,8 @@ img {
 }
 
 .content {
+  padding:8px;
+  background-color: #fff;
   margin-right: 46px;
   border-radius: 30px;
   display: flex;
@@ -162,18 +175,25 @@ img {
   height: 467px;
   margin-bottom: 50px;
   border: 1px solid #e1e1e1;
-  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow:3px 3px 10px 0.5px rgba(63, 61, 86, 0.175);
 }
 
 .contentSectionContent {
   padding: 48px 24px;
 }
 
+.mc_embed_signup{
+  align-items: center;
+}
+
+.mc-embedded-subscribe-form{
+  align-items: center;
+}
 /* FOOTER */
 .footerContainer {
+  margin-top:3%;
   background-color: #3ddc97;
   width: 100%;
-  margin: 0;
 }
 
 .footerWrap {
@@ -236,10 +256,6 @@ img {
   color: #3f3d56;
 }
 
-.mc_embed_signup_scroll {
-  align-items: center;
-  justify-content: center;
-}
 
 /* Media */
 @media screen and (max-width: 1100px) {
@@ -260,9 +276,10 @@ img {
     margin-left: 0%;
   }
   #asideMini {
-    display: flex;
     justify-content: center;
+    align-items: center;
   }
+
   aside {
     margin: 25px;
     order: 0;
@@ -276,6 +293,10 @@ img {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+.centerText{
+  text-align: center;
 }
 
 @media screen and (max-width: 630px) {
