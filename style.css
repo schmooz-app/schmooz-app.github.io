@@ -224,25 +224,24 @@ img {
 .footerLinkItems {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 16px;
-  text-align: left;
+  text-align: center;
   width: 160px;
+  justify-content: center;
+  align-content: center;
   box-sizing: border-box;
 }
 
 .footerLinkTitle {
   font-size: 18px;
   margin-bottom: 16px;
+  text-align: center;
   color: #3f3d56;
 }
 
 .footerLink {
-  color: #fff;
+
   text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .footerLink:hover {
@@ -299,6 +298,11 @@ img {
   text-align: center;
 }
 
+.copyTextMedium{
+  text-align: center;
+  font-size:1.3em;
+}
+
 @media screen and (max-width: 630px) {
   .footerLinkItems {
     margin: 8px;
@@ -311,9 +315,5 @@ img {
     flex-direction: column;
     padding: 12px 24px;
   }
-  .footerLinkItems {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
+
 }
