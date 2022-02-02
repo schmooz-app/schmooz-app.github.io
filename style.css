@@ -71,7 +71,7 @@ aside {
 }
 
 .cardpicture {
-  height: 50%;
+  height:75%;
   width: 100%;
 }
 
@@ -150,9 +150,9 @@ img {
 }
 /* body content stylings */
 .bodyflex {
-  margin-top: 103px;
+  margin-top: 2em;
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   align-content: center;
   justify-content: center;
 }
@@ -163,7 +163,7 @@ img {
 }
 
 .content {
-  padding:8px;
+  padding:3em;
   background-color: #fff;
   margin-right: 46px;
   border-radius: 30px;
@@ -172,14 +172,14 @@ img {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 467px;
+  height: 400px;
   margin-bottom: 50px;
   border: 1px solid #e1e1e1;
   box-shadow:3px 3px 10px 0.5px rgba(63, 61, 86, 0.175);
 }
 
 .contentSectionContent {
-  padding: 48px 24px;
+  padding: 0px 24px;
 }
 
 .mc_embed_signup{
@@ -209,6 +209,16 @@ img {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.copyflex {
+  margin-top: 103px;
+  display: flex;
+  margin-right:10em;
+  margin-left:10em;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .footerLinksWrapper {
@@ -302,6 +312,11 @@ img {
   text-align: center;
   font-size:1.3em;
 }
+.copyTextLarge{
+  text-align: center;
+  font-size:3em;
+}
+
 
 @media screen and (max-width: 630px) {
   .footerLinkItems {
