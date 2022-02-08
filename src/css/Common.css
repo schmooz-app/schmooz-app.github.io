@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+@font-face {
+	font-family: 'Poetsen One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poetsen One'),
+		local('PoetsenOne-Regular'),
+		url(//fontsta.sh/font/poetsenone/PoetsenOne-Regular.ttf) format('truetype'),
+		url(//fontsta.sh/font/poetsenone/PoetsenOne-Regular.woff) format('woff'),
+		url(//fontsta.sh/font/poetsenone/PoetsenOne-Regular.eot) format('embedded-opentype');
+}
+
+
+.header-text {
+  text-align: left;
+  color:#3DDC97;
+  font-size:2em;
+  font-family: 'Poetsen One';
+  font-weight:bold;
+
+}
+
+.text-medium {
+  text-align: left;
+  font-family: "Comfortaa";
+  font-size: 1.3em;
+}
+
+.text-small-plus {
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 1em;
+}
+
+.card {
+  padding:5%;
+  width:20%;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow:3px 3px 10px 0.5px rgba(63, 61, 86, 0.175);
+}
+
+
+.header-text-card {
+  text-align: center;
+  color:#575757;
+  font-size:1.5em;
+  font-family: 'Poetsen One';
+  font-weight:bold;
+}
+
+.center-svg{
+  text-align: center;
+  background-color: #3DDC97;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.sticky-thc {
+    position: sticky;
+    top: 0;
+}
+
+.svg-header{
+     position: absolute;
+     z-index: -1;
+}
+
+
+@media screen and (max-width:630px){
+
+  .card  {
+  width:80%
+  }
+
+  .header-text {
+  text-align: center;
+  }
+
+  .text-medium {
+  text-align: center;
+}
+
+.header-web{
+  display:none;
+}
+
+.hide-mobile{
+  display:none;
+}
+
+}
