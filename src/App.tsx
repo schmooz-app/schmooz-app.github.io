@@ -16,7 +16,7 @@ function App() {
           color: ColorString.white,
           paddingLeft: "5%",
           marginTop: "10%",
-          paddingBottom: "20%",
+          paddingBottom: "25%",
         }}
       >
         <p>Don’t hit snooze. Hit Schmooz.</p>
