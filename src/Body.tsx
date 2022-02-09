@@ -46,6 +46,7 @@ export function Body() {
             flex: 1,
             display: "flex",
             borderRadius: 30,
+            padding: 20,
             backgroundColor: ColorString.schmoozGreen,
             alignItems: "center",
             justifyContent: "center",
@@ -56,15 +57,22 @@ export function Body() {
             className="text-medium"
             style={{
               display: "flex",
-              flex: 2,
-              padding: 30,
+              flex: 1,
+              paddingRight: 30,
+              paddingLeft: 30,
               color: ColorString.white,
               textAlign: "center",
             }}
           >
             We would love to keep you updated with our development progress!
           </p>
-          <div style={{ display: "flex", flex: 1, padding: 20 }}>
+          <div
+            style={{
+              flex: 1,
+              justifyContent: "center",
+              padding: 20,
+            }}
+          >
             <SignupForm />
           </div>
         </div>

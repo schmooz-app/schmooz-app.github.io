@@ -1,7 +1,6 @@
 import React from "react";
 import { iconSchmooz } from "./assets/svgFunction/iconSchmooz";
 import { ColorString } from "./ColorPalette";
-import { SignupForm } from "./components/SignupForm";
 import "./css/Common.css";
 import "./css/Body.css";
 
@@ -9,7 +8,7 @@ export function Head() {
   return (
     <header className="sticky-thc">
       <div
-        className="text-medium "
+        className="text-medium hide-mobile"
         style={{
           display: "flex",
           alignContent: "center",
@@ -21,6 +20,14 @@ export function Head() {
         }}
       >
         {iconSchmooz()}
+        <svg className="show-mobile">
+          <image
+            className="show-mobile"
+            y={"10%"}
+            width={"50%"}
+            href="schmooz-text.svg"
+          />
+        </svg>
 
         <div
           className="header-web"
@@ -31,6 +38,7 @@ export function Head() {
             justifyContent: "space-evenly",
             textDecoration: "none",
             alignItems: "center",
+            backgroundColor: ColorString.transparent,
           }}
         >
           <a
@@ -39,7 +47,8 @@ export function Head() {
               textDecoration: "none",
               color: ColorString.white,
               fontWeight: "bold",
-              fontSize: 30,
+              fontSize: 20,
+              backgroundColor: ColorString.transparent,
             }}
             href="www.schmooz.app"
           >
@@ -48,10 +57,11 @@ export function Head() {
           <a
             className="text-medium header-web"
             style={{
-              fontSize: 30,
+              fontSize: 20,
               textDecoration: "none",
               color: ColorString.white,
               fontWeight: "bold",
+              backgroundColor: ColorString.transparent,
             }}
             href="www.schmooz.app"
           >
@@ -60,18 +70,16 @@ export function Head() {
           <a
             className="text-medium header-web"
             style={{
-              fontSize: 30,
+              fontSize: 20,
               textDecoration: "none",
               color: ColorString.white,
               fontWeight: "bold",
+              backgroundColor: ColorString.transparent,
             }}
             href="www.schmooz.app"
           >
             Contact
           </a>
-        </div>
-        <div className="hide-mobile" style={{ justifyContent: "flex-end" }}>
-          <SignupForm />
         </div>
       </div>
     </header>

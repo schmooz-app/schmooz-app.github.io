@@ -16,7 +16,7 @@
   text-align: left;
   color:#3DDC97;
   font-size:2em;
-  font-family: 'Poetsen One';
+  font-family: 'Comfortaa';
   font-weight:bold;
 
 }
@@ -68,8 +68,18 @@
      z-index: -1;
 }
 
+.show-mobile{
+  display:none;
+}
 
-@media screen and (max-width:630px){
+.header-signup{
+  align-items: flex-start;
+}
+
+
+
+
+@media screen and (max-width:768px){
 
   .card  {
   width:80%
@@ -90,5 +100,29 @@
 .hide-mobile{
   display:none;
 }
+
+.slogan-mobile{
+  margin-bottom:30%;
+  padding-top: 65%;
+}
+
+.header-signup{
+  justify-content: center;
+
+  width:100%;
+  display: flex;
+}
+
+.show-mobile{
+  display:initial;
+  position: absolute;
+  z-index: -1;
+}
+
+.sticky-thc {
+      position: relative;
+    top: 0;
+}
+
 
 }

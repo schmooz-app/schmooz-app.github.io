@@ -1,9 +1,9 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { SchmoozSubscribeForm } from "./SchmoozSubscribeForm";
 
-export function SignupForm() {
+export function SignupForm({ className }: { className?: string }) {
   return (
-    <div>
+    <div className={className}>
       <MailchimpSubscribe
         url="https://app.us20.list-manage.com/subscribe/post?u=6f96ddef3e7d4a0e74013600a&id=7133eda1eb"
         render={({ subscribe, status, message }) => (
