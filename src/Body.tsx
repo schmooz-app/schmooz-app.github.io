@@ -18,7 +18,6 @@ export function Body() {
           your fans, and followers.
         </p>
       </div>
-
       <div className="copy-flex">
         <p className="header-text">Learn How it Works</p>
         <div style={{ flex: 1 }} className="card-row">
@@ -46,7 +45,6 @@ export function Body() {
             flex: 1,
             display: "flex",
             borderRadius: 30,
-            padding: 20,
             backgroundColor: ColorString.schmoozGreen,
             alignItems: "center",
             justifyContent: "center",
@@ -56,7 +54,6 @@ export function Body() {
           <p
             className="text-medium"
             style={{
-              display: "flex",
               flex: 1,
               paddingRight: 30,
               paddingLeft: 30,
@@ -69,9 +66,10 @@ export function Body() {
           <div
             style={{
               flex: 1,
-              justifyContent: "center",
+              alignContent: "center",
               padding: 20,
             }}
+            className="signup-card-div"
           >
             <SignupForm />
           </div>

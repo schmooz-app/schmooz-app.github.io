@@ -35,12 +35,13 @@ export function SchmoozSubscribeForm({
             display: "flex",
             borderWidth: 1,
             maxWidth: "500px",
-            minWidth: "200px",
+            minWidth: "300px",
             borderColor: ColorString.grey,
-            backgroundColor: ColorString.white,
             borderRadius: 10,
-            height: 52,
+            alignContent: "center",
+            alignItems: "center",
           }}
+          className="subscribe-section"
         >
           <input
             value={email}
@@ -51,16 +52,16 @@ export function SchmoozSubscribeForm({
               outlineWidth: 0,
               fontSize: 20,
               border: 0,
-              width: "80%",
               borderColor: ColorString.lightGrey,
               borderRadius: 10,
               height: 50,
             }}
+            className="subscribe-fields"
           />
           <input
             type="submit"
             value="Subscribe"
-            className="text-medium"
+            className="text-medium subscribe-buttons"
             style={{
               textAlign: "center",
               backgroundColor: ColorString.red,
@@ -72,28 +73,34 @@ export function SchmoozSubscribeForm({
             }}
           />
         </div>
-        {status === "sending" && (
-          <div
-            className="text-medium"
-            style={{ color: ColorString.white, fontSize: 14 }}
-          >
-            sending...
-          </div>
-        )}
-        {status === "error" && (
-          <div
-            style={{ color: ColorString.red, fontSize: 14 }}
-            className="text-medium"
-            dangerouslySetInnerHTML={{ __html: message as string }}
-          />
-        )}
-        {status === "success" && (
-          <div
-            className="text-medium"
-            style={{ color: ColorString.white, fontSize: 14 }}
-            dangerouslySetInnerHTML={{ __html: message as string }}
-          />
-        )}
+        <div style={{ height: 20 }}>
+          {status === "sending" && (
+            <div
+              className="text-medium"
+              style={{ color: ColorString.white, fontSize: 14, maxWidth: 300 }}
+            >
+              sending...
+            </div>
+          )}
+          {status === "error" && (
+            <div
+              style={{ color: ColorString.red, fontSize: 14, maxWidth: 300 }}
+              className="text-medium"
+              dangerouslySetInnerHTML={{ __html: message as string }}
+            />
+          )}
+          {status === "success" && (
+            <div
+              className="text-medium"
+              style={{
+                color: ColorString.white,
+                fontSize: 14,
+                maxWidth: 300,
+              }}
+              dangerouslySetInnerHTML={{ __html: message as string }}
+            />
+          )}
+        </div>
       </form>
     </div>
   );

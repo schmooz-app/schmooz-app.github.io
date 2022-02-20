@@ -76,6 +76,27 @@
   align-items: flex-start;
 }
 
+.subscribe-section{
+  flex-direction: row;
+  height: 52px;
+  background-color: white;
+
+}
+
+.subscribe-fields{
+  width:80%;
+  margin-bottom: 5;
+
+}
+
+.signup-card-div{
+  margin-top:20px
+}
+
+
+.sandwich-menu{
+  display: none;
+}
 
 
 
@@ -101,6 +122,21 @@
   display:none;
 }
 
+.subscribe-section{
+  flex-direction: column;
+  height: 104px;
+  background-color: transparent;
+
+}
+.subscribe-fields{
+  width:100%;
+  margin-bottom: 7px;
+}
+
+.subscribe-buttons{
+  width:104%;
+}
+
 .slogan-mobile{
   margin-bottom:30%;
   padding-top: 65%;
@@ -108,20 +144,27 @@
 
 .header-signup{
   justify-content: center;
-
   width:100%;
   display: flex;
 }
 
 .show-mobile{
   display:initial;
-  position: absolute;
-  z-index: -1;
 }
 
 .sticky-thc {
-      position: relative;
-    top: 0;
+  position: relative;
+  top: 0;
+}
+
+.signup-card-div{
+  margin-top:5px
+}
+
+.sandwich-menu{
+  display: flex;
+  flex:1;
+  justify-content: flex-end;
 }
 
 
